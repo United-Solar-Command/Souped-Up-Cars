@@ -1,0 +1,76 @@
+Vehicle : "{16C1F16C9B053801}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{65A341DB4E176485}" {
+     SourceMaterial "Ural_Body"
+     AssignedMaterial "{24D8B5AB6A0E9628}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Body_Black.emat"
+    }
+    MaterialAssignClass "{65A341DB4E1764AB}" {
+     SourceMaterial "Ural_Details"
+     AssignedMaterial "{ED429F0E64039AD4}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Details_black.emat"
+    }
+    MaterialAssignClass "{65A341DB4E1764A2}" {
+     SourceMaterial "Ural_Interior_01"
+     AssignedMaterial "{5C71C02594A9D5C0}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Interior_black.emat"
+    }
+    MaterialAssignClass "{65A341DB4E1764A6}" {
+     SourceMaterial "Ural_Interior_02"
+     AssignedMaterial "{98D44773494678CF}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Interior_Metals_black.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_sFaction "CIV_VIC"
+    m_aAutoLabels {
+     14 122 54 1001
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{512CC5B0F07DA8F9}" {
+   m_fFuelConsumption 20
+   m_fFuelConsumptionIdle 0
+  }
+  SCR_UniversalInventoryStorageComponent "{5916C58171230A92}" {
+   MultiSlots {
+    MultiSlotConfiguration "{5A60D38EDB3709A9}" {
+    }
+    MultiSlotConfiguration "{65A341DA4CE8C968}" {
+     NumSlots 0
+    }
+    MultiSlotConfiguration "{65A341DA4CE8C966}" {
+     NumSlots 0
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "CIV_VIC"
+  }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Engine Engine Engine {
+     MaxPower 300
+     MaxTorque 1600
+     RpmMaxPower 5000
+     RpmMaxTorque 4000
+     Friction 300
+     RpmIdle 1500
+     RpmRedline 6000
+     RpmMax 12000
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo TireHolder {
+     Prefab "{7CB71FE5C6EBC738}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_sparetire_holder_black.et"
+    }
+    RegisteringComponentSlotInfo Cargo {
+     Prefab "{BB5E3184E607C84F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_black.et"
+    }
+   }
+  }
+ }
+}

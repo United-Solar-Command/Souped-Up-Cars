@@ -1,0 +1,12 @@
+MatPBRMulti : "{0B26CD1D86CDA51B}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_body.emat" {
+ Color 0 0 0 1
+ Color_2 0.584 0.171 0.059 1
+ MaskOffset_2 0.044
+ MaskUVScale_2 1
+ Color_1 0.337 0.084 0.022 1
+ BCR_1 
+ NMO_1 "{839CBC1678749998}Assets/_SharedData/Metal/ST_MetalPaint_Coated_1m_NMO.edds"
+ DetNormal_1 0.1
+ Roughness_1 0.1
+ Metalness_1 0
+}

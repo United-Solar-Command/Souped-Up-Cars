@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0B9EDBB2A8341926}Prefabs/Vehicles/Wheeled/S1203/VehParts/Wheels/S1203_wheel.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

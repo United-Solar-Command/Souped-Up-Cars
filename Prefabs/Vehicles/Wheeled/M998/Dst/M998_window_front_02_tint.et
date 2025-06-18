@@ -1,0 +1,8 @@
+GenericEntity : "{AC85B4B071C888DA}Prefabs/Vehicles/Wheeled/M998/Dst/M998_armored_window_base.et" {
+ ID "54ACA4E7EDB33945"
+ components {
+  MeshObject "{54ACA4E7F43678F8}" {
+   Object "{BFBAF21C02DD6BA0}Assets/Vehicles/Wheeled/M998/Dst/M998_Glass_Front_02.xob"
+  }
+ }
+}

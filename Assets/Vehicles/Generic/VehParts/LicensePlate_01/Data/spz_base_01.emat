@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{CC179724EBBCF0DD}Assets/Weapons/Cannons/Cannon_ZU232/licence_plate/Data/spz_bcr.edds"
+ NMOMap "{F4CF2CB632CBA243}Assets/Weapons/Cannons/Cannon_ZU232/licence_plate/Data/spz_nmo.edds"
+}

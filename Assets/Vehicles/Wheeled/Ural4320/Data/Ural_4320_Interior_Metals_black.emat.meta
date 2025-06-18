@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{98D44773494678CF}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Interior_Metals_black.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

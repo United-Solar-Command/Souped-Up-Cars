@@ -1,0 +1,18 @@
+GenericEntity : "{25895C54FE021EE6}Prefabs/Vehicles/Core/Vehicle_Canvas_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{D59C3FB93D59ABA4}Assets/Vehicles/Wheeled/M151A2/m151a2_canvas.xob"
+   Materials {
+    MaterialAssignClass "{65A341C238BE5682}" {
+     SourceMaterial "M151A2_Body"
+     AssignedMaterial "{2C57E9257D608F77}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Body_black.emat"
+    }
+    MaterialAssignClass "{65A341C238BE56A8}" {
+     SourceMaterial "M151A2_Canvas"
+     AssignedMaterial "{073149B0A8E630E6}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Canvas_black.emat"
+    }
+   }
+  }
+ }
+}

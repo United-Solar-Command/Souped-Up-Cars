@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E9A9474B959891A1}Prefabs/Vehicles/Wheeled/BTR70/CargoCompartment_BTR70.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

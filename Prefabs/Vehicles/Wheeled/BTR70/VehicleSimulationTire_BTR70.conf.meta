@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6D282FE2B46BA112}Prefabs/Vehicles/Wheeled/BTR70/VehicleSimulationTire_BTR70.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

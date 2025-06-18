@@ -1,0 +1,70 @@
+Vehicle : "{92AA1080824A3F7E}Prefabs/Vehicles/Wheeled/UAZ452/UAZ452_transport_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{65A341D4F02336F0}" {
+     SourceMaterial "uaz452_body"
+     AssignedMaterial "{7DE3E2FCADE54AC2}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_body.emat"
+    }
+    MaterialAssignClass "{65A341D4F02336D7}" {
+     SourceMaterial "uaz452_body_2"
+     AssignedMaterial "{2035C6D23CB74187}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_body_2.emat"
+    }
+    MaterialAssignClass "{65A341D4F02336DB}" {
+     SourceMaterial "uaz452_interior_1"
+     AssignedMaterial "{12E71EF58E4DBDE8}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_interior_1.emat"
+    }
+    MaterialAssignClass "{65A341D4F02336A3}" {
+     SourceMaterial "uaz452_interior_2"
+     AssignedMaterial "{4C0F37B631C033E9}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_interior_2.emat"
+    }
+    MaterialAssignClass "{65A341D4F02336A8}" {
+     SourceMaterial "uaz452_interior_3"
+     AssignedMaterial "{B807702E3C1D5B9D}Assets/Vehicles/Wheeled/UAZ452/Data/uaz452_interior_3.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{618CD154715E8958}" {
+     EntryPositionInfo PointInfo "{618CD1549CBBA02F}" {
+      Angles 0 180 0
+     }
+     ExitPositionInfo PointInfo "{618CD1549B08B382}" {
+      Angles 0 180 0
+     }
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_sFaction "CIV_VIC"
+    m_aAutoLabels {
+     14 1001 122 50
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{512CC5B0F07DA8F9}" {
+   m_fFuelConsumption 10
+   m_fFuelConsumptionIdle 0
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "CIV_VIC"
+  }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Engine Engine Engine {
+     MaxPower 300
+     MaxTorque 400
+     RpmMaxPower 8000
+     RpmMaxTorque 5000
+     Friction 100
+     RpmIdle 2000
+     RpmRedline 10000
+     RpmMax 15000
+    }
+   }
+  }
+ }
+}

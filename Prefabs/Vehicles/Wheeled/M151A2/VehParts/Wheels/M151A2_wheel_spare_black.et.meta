@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{297A4090DC0AECB3}Prefabs/Vehicles/Wheeled/M151A2/VehParts/Wheels/M151A2_wheel_spare_black.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

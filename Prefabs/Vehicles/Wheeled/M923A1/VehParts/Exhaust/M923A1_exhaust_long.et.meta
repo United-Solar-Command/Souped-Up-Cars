@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8BCC0CC2F3A9A49D}Prefabs/Vehicles/Wheeled/M923A1/VehParts/Exhaust/M923A1_exhaust_long.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

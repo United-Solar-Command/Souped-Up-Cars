@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F71AB57CFD087A72}Prefabs/Vehicles/Wheeled/S1203/CompartmentAccess_S1203.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

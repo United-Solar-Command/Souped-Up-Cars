@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E5B0404A86BFD550}Prefabs/Vehicles/Wheeled/M998/MedicCompartment_M997.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

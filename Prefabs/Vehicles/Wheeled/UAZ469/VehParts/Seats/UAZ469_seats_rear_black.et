@@ -1,0 +1,390 @@
+GenericEntity : "{278E487E19D82680}Prefabs/Vehicles/Core/Vehicle_Cargo_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{86C88944D7673B84}Assets/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_seats_rear.xob"
+   Materials {
+    MaterialAssignClass "{65A341D9E3B823F9}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{7B3F7314677908CE}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_black.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{2CD4A765A7D52986}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{65A341D9F09EF5BA}" {
+     AnimDoorIndex 2
+     ContextName "door_l02"
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{65A341D9F09EF5B6}" {
+      ParentContextList {
+       "door_l02" "door_l02_int"
+      }
+      UIInfo SCR_ActionUIInfo "{65A341D9F09EF5CB}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 13
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{65A341D9F09EF5CF}" {
+      ParentContextList {
+       "door_l02" "door_l02_int_handle"
+      }
+      UIInfo SCR_ActionUIInfo "{65A341D9F09EF5C1}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 11
+     }
+     EntryPositionInfo PointInfo "{65A341D9F09EF5C2}" {
+      PivotID "passengerL_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341D9F09EF5C4}" {
+      PivotID "passengerL_idle"
+     }
+     AccessibilitySettings CompartmentAccessibilityContext "{65A341D9F09EF5D9}" {
+      BBHalfExtents 0.4 0.4 0.005
+      TraceOffset -0.2 0.7 1
+      ExcludePhysicsLayer 262144
+     }
+    }
+    CompartmentDoorInfo "{65A341D9F09EF5DD}" {
+     AnimDoorIndex 3
+     ContextName "door_r02"
+     OpenDoorAction SCR_OpenVehicleDoorUserAction "{65A341D9F09ED9CF}" {
+      ParentContextList {
+       "door_r02" "door_r02_int"
+      }
+      UIInfo SCR_ActionUIInfo "{65A341D9F09ED9C0}" {
+       Name "#AR-UserAction_Open"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 13
+     }
+     CloseDoorAction SCR_CloseVehicleDoorUserAction "{65A341D9F09ED9C6}" {
+      ParentContextList {
+       "door_r02" "door_r02_int_handle"
+      }
+      UIInfo SCR_ActionUIInfo "{65A341D9F09ED9C4}" {
+       Name "#AR-UserAction_Close"
+       m_sIconName "veh_door"
+      }
+      "Sort Priority" 11
+     }
+     EntryPositionInfo PointInfo "{65A341D9F09ED9FB}" {
+      PivotID "passengerR_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341D9F09ED9FA}" {
+      PivotID "passengerR_idle"
+     }
+     AccessibilitySettings CompartmentAccessibilityContext "{65A341D9F09ED9F9}" {
+      BBHalfExtents 0.4 0.4 0.005
+      TraceOffset -0.2 0.7 1
+      ExcludePhysicsLayer 262144
+     }
+    }
+    CompartmentDoorInfo "{65A341D9F09ED9FE}" {
+     AnimDoorIndex 2
+     ContextName "passenger_m02_L"
+     EntryPositionInfo PointInfo "{65A341D9F09ED9FC}" {
+      PivotID "passengerL_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341D9F09ED9F3}" {
+      PivotID "passengerL_getIn"
+     }
+     FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{65A341D9F09ED9F2}" {
+      BBHalfExtents 0.4 0.4 0.005
+      TraceOffset -0.2 0.7 1
+      ExcludePhysicsLayer 262144
+     }
+    }
+    CompartmentDoorInfo "{65A341D9F09ED9F0}" {
+     AnimDoorIndex 3
+     ContextName "passenger_m02_R"
+     EntryPositionInfo PointInfo "{65A341D9F09ED9F6}" {
+      PivotID "passengerR_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341D9F09E6388}" {
+      PivotID "passengerR_getIn"
+     }
+     FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{65A341D9F09E638A}" {
+      BBHalfExtents 0.4 0.4 0.005
+      TraceOffset -0.2 0.7 1
+      ExcludePhysicsLayer 262144
+     }
+    }
+   }
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_l02 : "{9BD4548866DA1807}Prefabs/Vehicles/Core/Configs/CargoCompartment_Base.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "door_l02" "passenger_l02"
+      }
+      UIInfo SCR_ActionUIInfo "{5086CC2FC26F3322}" : "{DE16A921564FEEE1}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetInPassenger.conf" {
+      }
+      "Sort Priority" 9
+     }
+     GetOutAction SCR_GetOutAction "{509D56665A8C6923}" {
+      ParentContextList {
+       "door_l02_int"
+      }
+      UIInfo SCR_ActionUIInfo "{509D56665C8E044F}" : "{6B098766DC92FCA3}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetOut.conf" {
+      }
+      "Sort Priority" 12
+     }
+     JumpOutAction SCR_JumpOutAction "{5D0B1D46E1FC958A}" {
+      UIInfo SCR_ActionUIInfo "{5D0B1D4714B59342}" : "{66FA02022BE60AC7}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_Eject.conf" {
+      }
+      "Sort Priority" 12
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_l02"
+      }
+      UIInfo SCR_ActionUIInfo "{509D56666CE81B88}" : "{388CC0123E254950}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_SwitchSeatPassenger.conf" {
+      }
+      "Sort Priority" 9
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_l02"
+       }
+       "Sort Priority" 10
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_l02" "passenger_l02"
+       }
+       "Sort Priority" 10
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passengerl_idle"
+     }
+     SeatType 2
+     DoorInfoList {
+      0
+     }
+     UIInfo UIInfo "{50870A10CE897250}" {
+     }
+     ContextName "passenger_l02"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{65A341D9F09E6362}" {
+      m_sDefaultOccupantPrefab "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_r02 : "{9BD4548866DA1807}Prefabs/Vehicles/Core/Configs/CargoCompartment_Base.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "door_r02" "passenger_r02"
+      }
+      UIInfo SCR_ActionUIInfo "{5086CC2FC26F3322}" : "{DE16A921564FEEE1}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetInPassenger.conf" {
+      }
+      "Sort Priority" 9
+     }
+     GetOutAction SCR_GetOutAction "{509D56665A8C6923}" {
+      ParentContextList {
+       "door_r02_int"
+      }
+      UIInfo SCR_ActionUIInfo "{509D56665C8E044F}" : "{6B098766DC92FCA3}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetOut.conf" {
+      }
+      "Sort Priority" 12
+     }
+     JumpOutAction SCR_JumpOutAction "{5D0B1D46E1FC958A}" {
+      UIInfo SCR_ActionUIInfo "{5D0B1D4714B59342}" : "{66FA02022BE60AC7}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_Eject.conf" {
+      }
+      "Sort Priority" 12
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_r02"
+      }
+      UIInfo SCR_ActionUIInfo "{509D56666CE81B88}" : "{388CC0123E254950}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_SwitchSeatPassenger.conf" {
+      }
+      "Sort Priority" 9
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_r02"
+       }
+       "Sort Priority" 10
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_r02" "passenger_r02"
+       }
+       "Sort Priority" 10
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passengerr_idle"
+     }
+     SeatType 3
+     DoorInfoList {
+      1
+     }
+     UIInfo UIInfo "{50870A10CE897250}" {
+     }
+     ContextName "passenger_r02"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{65A341D9F09E6371}" {
+      m_sDefaultOccupantPrefab "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+     }
+    }
+    CargoCompartmentSlot Passenger_m02 : "{9BD4548866DA1807}Prefabs/Vehicles/Core/Configs/CargoCompartment_Base.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList {
+       "door_l02" "door_r02" "passenger_r02" "passenger_l02"
+      }
+      UIInfo SCR_ActionUIInfo "{5086CC2FC26F3322}" : "{DE16A921564FEEE1}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetInPassenger.conf" {
+      }
+      "Sort Priority" 9
+     }
+     GetOutAction SCR_GetOutAction "{509D56665A8C6923}" {
+      ParentContextList {
+       "door_l02_int" "door_r02_int"
+      }
+      UIInfo SCR_ActionUIInfo "{509D56665C8E044F}" : "{6B098766DC92FCA3}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetOut.conf" {
+      }
+      "Sort Priority" 12
+     }
+     JumpOutAction SCR_JumpOutAction "{5D0B1D46E1FC958A}" {
+      UIInfo SCR_ActionUIInfo "{5D0B1D4714B59342}" : "{66FA02022BE60AC7}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_Eject.conf" {
+      }
+      "Sort Priority" 12
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_m02"
+      }
+      UIInfo SCR_ActionUIInfo "{509D56666CE81B88}" : "{DE16A921564FEEE1}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetInPassenger.conf" {
+       Name "#AR-UserAction_SwitchSeat"
+       Icon ""
+       m_sIconName "passenger-seat"
+      }
+      "Sort Priority" 9
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_m02"
+       }
+       "Sort Priority" 10
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_r02" "door_l02" "passenger_r02" "passenger_l02"
+       }
+       "Sort Priority" 10
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passengerM_idle"
+      Offset 0 0 0
+     }
+     SeatType 4
+     DoorInfoList {
+      0 1 2 3
+     }
+     UIInfo UIInfo "{50870A10CE897250}" {
+     }
+     ContextName "passenger_m02"
+     m_DefaultOccupantData SCR_DefaultOccupantData "{65A341D9F09E6349}" {
+      m_sDefaultOccupantPrefab "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+     }
+    }
+   }
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Cargo {
+     IgnoreExplosions 1
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5E58C207959A9200}" {
+   Enabled 0
+  }
+  SCR_VehicleCameraDataComponent "{5E0BA784A744A7CE}" {
+   m_fHeight 1
+   m_fDist_Max 4.8
+   m_fDist_Min 3.2
+   m_fDist_Desired 4
+  }
+  ActionsManagerComponent "{2CD4A765B4482F53}" {
+   ActionContexts {
+    UserActionContext "{65A341D9F09E635F}" {
+     UIInfo SCR_ActionContextUIInfo "{6106CDBEFDF46423}" : "{7CD00B230573CAC6}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/SCR_ActionContextUIInfo.conf" {
+     }
+     ContextName "passenger_l02"
+     Position PointInfo "{65A341D9F09E6359}" {
+      PivotID "passengerl_idle"
+      Offset 0 0.0286 -0.0476
+     }
+     Radius 0.2
+    }
+    UserActionContext "{65A341D9F09E635A}" {
+     UIInfo SCR_ActionContextUIInfo "{6106CDBEF7A0432E}" : "{7CD00B230573CAC6}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/SCR_ActionContextUIInfo.conf" {
+     }
+     ContextName "passenger_r02"
+     Position PointInfo "{65A341D9F09E6325}" {
+      PivotID "passengerr_idle"
+      Offset 0 0.0286 -0.0476
+     }
+     Radius 0.2
+    }
+    UserActionContext "{65A341D9F09E6324}" {
+     UIInfo SCR_ActionContextUIInfo "{65A341D9F09E6327}" {
+     }
+     ContextName "passenger_m02"
+     Position PointInfo "{65A341D9F09E6321}" {
+      PivotID "passengerm_idle"
+      Offset -0.0269 0.0286 -0.0476
+      Angles 0 -90 0
+     }
+     Radius 0.2
+     Height 0
+     VisibilityAngle 80
+    }
+    UserActionContext "{65A341D9F09E632D}" {
+     UIInfo SCR_ActionContextUIInfo "{65A341D9F09E632F}" {
+     }
+     ContextName "passenger_m02_L"
+     Position PointInfo "{65A341D9F09E632E}" {
+      PivotID "passengerm_idle"
+      Offset -0.0787 0.0286 -0.0476
+      Angles 0 -90 0
+     }
+     Radius 0.2
+     Height 0
+     Omnidirectional 0
+     VisibilityAngle 80
+    }
+    UserActionContext "{65A341D9F09E633C}" {
+     UIInfo SCR_ActionContextUIInfo "{6106CDBEFAB352E5}" : "{7CD00B230573CAC6}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/SCR_ActionContextUIInfo.conf" {
+     }
+     ContextName "passenger_m02_R"
+     Position PointInfo "{65A341D9F09E633E}" {
+      PivotID "passengerm_idle"
+      Offset 0.0309 0.0286 -0.0476
+      Angles 0 90 0
+     }
+     Radius 0.2
+     Omnidirectional 0
+     VisibilityAngle 80
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+  VehicleAnimationComponent "{50B812962B17E60B}" {
+   AnimGraph "{FA439A24DBFB7E5C}Assets/Vehicles/Wheeled/UAZ469/workspaces/UAZ.agr"
+   AnimInstance "{8ABBE281172915CA}Assets/Vehicles/Wheeled/UAZ469/workspaces/UAZ_vehicle.asi"
+   AnimInjection AnimationAttachmentInfo "{50B812961A339FD2}" {
+    AnimGraph "{FA439A24DBFB7E5C}Assets/Vehicles/Wheeled/UAZ469/workspaces/UAZ.agr"
+    AnimInstance "{33E7ECD51715F4CE}Assets/Vehicles/Wheeled/UAZ469/workspaces/UAZ_player.asi"
+   }
+   AutoVariablesBind 1
+  }
+ }
+}

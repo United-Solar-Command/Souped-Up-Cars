@@ -1,0 +1,179 @@
+Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{65A341C3FC27AB7E}" {
+     SourceMaterial "M151A2_Body"
+     AssignedMaterial "{2C57E9257D608F77}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Body_black.emat"
+    }
+   }
+  }
+  RigidBody "{51ACD09C423F175F}" {
+   Static 0
+  }
+  ProcAnimComponent "{51ACD09DB14C45C0}" {
+   Enabled 0
+  }
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{65A341CFAFC9ECD3}" {
+     ContextName "Front_Gunner"
+     EntryPositionInfo PointInfo "{65A341CFAFC9ECDF}" {
+      PivotID "gunner_front_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341CFAFC9ECE2}" {
+     }
+     FakeDoor 1
+    }
+    CompartmentDoorInfo "{65A341CFAFC9ECE5}" {
+     AnimDoorIndex 2
+     ContextName "Left_Gunner"
+     EntryPositionInfo PointInfo "{65A341CFAFC9ECE7}" {
+      PivotID "gunner_left_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341CFAFC9ECE9}" {
+     }
+     FakeDoor 1
+    }
+    CompartmentDoorInfo "{65A341CFAFC9ECEB}" {
+     AnimDoorIndex 3
+     ContextName "Right_Gunner"
+     EntryPositionInfo PointInfo "{65A341CFAFC9ECEC}" {
+      PivotID "gunner_right_getIn"
+     }
+     ExitPositionInfo PointInfo "{65A341CFAFC9ECF2}" {
+     }
+     FakeDoor 1
+    }
+   }
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "FrontGunner" "wheel_spare" "LeftGunner" "RightGunner"
+      }
+      UIInfo SCR_ActionUIInfo "{5086CC2CF6E6E730}" : "{985161CA55892A3C}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetInGunner.conf" {
+      }
+      "Sort Priority" 5
+     }
+     GetOutAction SCR_GetOutAction "{509D56664FF79DDB}" {
+      UIInfo SCR_ActionUIInfo "{509D566643F0DEA8}" : "{6B098766DC92FCA3}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_GetOut.conf" {
+      }
+      "Sort Priority" 12
+     }
+     JumpOutAction SCR_JumpOutAction "{5D0B1D47DC1C5730}" {
+      UIInfo SCR_ActionUIInfo "{5D0B1D47D8169C4A}" : "{66FA02022BE60AC7}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_Eject.conf" {
+      }
+      "Sort Priority" 12
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
+      UIInfo SCR_ActionUIInfo "{509D56664DBB3262}" : "{50D232E0CC3A06A7}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_SwitchSeatGunner.conf" {
+       Name "#AR-UserAction_SwitchSeat"
+       Icon ""
+      }
+      "Sort Priority" 5
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "default"
+       }
+       UIInfo SCR_ActionUIInfo "{5D56867A43FC0F62}" : "{A0A9603C4409F8D2}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/ActionUIInfo_RemoveCasulities.conf" {
+       }
+       "Sort Priority" 4
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "FrontGunner" "wheel_spare" "LeftGunner" "RightGunner"
+       }
+       "Sort Priority" 4
+      }
+     }
+     ForcedFreeLook 0
+     CharactersCanFallOutOnFlip 1
+     DoorInfoList {
+      0 1 2
+     }
+     m_DefaultOccupantData SCR_DefaultOccupantData "{65A341CFAFC9EC8A}" {
+      m_sDefaultOccupantPrefab "{26A9756790131354}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Rifleman.et"
+     }
+    }
+   }
+  }
+  SCR_TurretControllerComponent "{51ACD09C61C183E4}" {
+   LimitsHoriz -60 60
+   LimitsVert -15 40
+   TurretReloadPosition 500 30
+   TurretUnconsciousPosition 500 60
+  }
+  SCR_UniversalInventoryStorageComponent "{65A341CFAFC9EC94}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{65A341CFAFC9EC97}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{65A341CFAFC9EC99}" {
+      CameraDistanceToItem 1.9
+     }
+     SCR_InventoryVehicleVisibilityAttribute "{65A341CFAFC9ECA3}" {
+      m_bShowForVehicleFactionOnly 1
+     }
+    }
+    m_bDraggable 0
+   }
+   m_fMaxWeight 100
+  }
+  SCR_VehicleCameraDataComponent "{51AE850D79DDB1F5}" {
+   m_fHeight 1
+   m_fDist_Max 4.8
+   m_fDist_Min 3.2
+   m_fDist_Desired 4
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate ""
+  }
+  SCR_TurretInventoryStorageManagerComponent "{65A341CFAFC9ECAA}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{51ACFBB064390C6E}" {
+     UIInfo SCR_ActionContextUIInfo "{6108CB4D8ABBF37C}" : "{7CD00B230573CAC6}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/SCR_ActionContextUIInfo.conf" {
+     }
+     ContextName "FrontGunner"
+     Position PointInfo "{51ACFBB061993925}" {
+      Offset 0 1.9577 -0.2881
+     }
+     Radius 0.5
+    }
+    UserActionContext "{65A341CFAFC9ECB1}" {
+     UIInfo SCR_ActionContextUIInfo "{6108CB4D8ABBF37C}" : "{7CD00B230573CAC6}Prefabs/Vehicles/Core/Configs/Actions/ActionUIInfo/SCR_ActionContextUIInfo.conf" {
+     }
+     ContextName "GunMount"
+     Position PointInfo "{65A341CFAFC9ECB3}" {
+      Offset 0 1.9577 -0.2881
+     }
+     Radius 0.5
+    }
+    UserActionContext "{65A341CFAFC9ECB4}" {
+     UIInfo SCR_ActionContextUIInfo "{65A341CFAFC9ECB6}" {
+     }
+     ContextName "LeftGunner"
+     Position PointInfo "{65A341CFAFC9ECB7}" {
+      Offset -0.8252 1.1183 -1.139
+      Angles 0 -90 0
+     }
+    }
+    UserActionContext "{65A341CFAFC9ECB9}" {
+     UIInfo SCR_ActionContextUIInfo "{65A341CFAFC9ECBA}" {
+     }
+     ContextName "RightGunner"
+     Position PointInfo "{65A341CFAFC9ECBB}" {
+      Offset 0.8252 1.1183 -1.139
+      Angles 0 90 0
+     }
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+ }
+}

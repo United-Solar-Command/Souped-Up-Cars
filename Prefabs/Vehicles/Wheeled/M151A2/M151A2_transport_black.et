@@ -1,0 +1,141 @@
+Vehicle : "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et" {
+ ID "44EC665ABD2FF04B"
+ components {
+  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+   Filenames {
+    "{D89573B95647C34A}Sounds/Vehicles/Wheeled/M151A2/Vehicles_M151A2_Engine.acp" "{A117C96F2734B916}Sounds/Vehicles/Wheeled/M151A2/Vehicles_M151A2_Dampers.acp" "{653EACB16464519D}Sounds/Vehicles/Wheeled/M151A2/Vehicles_M151A2_Animations.acp" "{69E28569A5638E5A}Sounds/Vehicles/Wheeled/M151A2/Vehicles_M151A2_Horn.acp" "{BA8A5BD290F5FB34}Sounds/Vehicles/_SharedData/Destruction/Vehicles_Destruction.acp" "{7AC983FDF489C61F}Sounds/Vehicles/Wheeled/M151A2/Vehicles_M151A2_Rain_Canvas.acp" "{D2DF25DD8B4A4B62}Sounds/Destruction/Multiphase/Destruction_Multiphase_Vehicle.acp" "{465B31754AAAE693}Sounds/Vehicles/_SharedData/Crashes/Cars/Vehicles_Crashes_Cars.acp" "{F1030E91E4B33E24}Sounds/Vehicles/_SharedData/WaterInteractions/Vehicles_WaterInteractions.acp" "{9DD9C6279F4489B4}Sounds/SupportStations/SupportStations_Vehicles.acp" "{F41C3D53A2B69D85}Sounds/Vehicles/_SharedData/Destruction/Vehicles_Destruction_Fires.acp"
+   }
+  }
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{65A341C24907AAFD}" {
+     SourceMaterial "M151A2_Body"
+     AssignedMaterial "{2C57E9257D608F77}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Body_black.emat"
+    }
+    MaterialAssignClass "{65A341C24907AA18}" {
+     SourceMaterial "M151A2_Details"
+     AssignedMaterial "{A81E68A0A841F5B6}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Details_black.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    PilotCompartmentSlot PilotCompartment {
+    }
+    CargoCompartmentSlot Passenger_r01 {
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#AR-Vehicle_M151A2_Name"
+    Icon "{943873C801ED95B8}UI/Textures/Editor/EditableEntities/Vehicles/EditableEntity_Vehicle_Offroad.edds"
+    m_Image "{565989A21E6909FD}UI/Textures/EditorPreviews/Vehicles/Wheeled/M151A2/M151A2_transport.edds"
+    m_sFaction "CIV_VIC"
+    m_aAutoLabels {
+     14 1001 122 50
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 120
+     }
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{512CC5B0F07DA8F9}" {
+   m_fFuelConsumption 10
+   m_fFuelConsumptionIdle 0
+  }
+  SCR_ResourceComponent "{5D82E3BA6C4795F8}" {
+   m_aEncapsulators {
+    SCR_ResourceEncapsulator "{5DAD42B116A53C11}" {
+     m_sDebugName "Encapsulator - M151a2 Transport"
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "CIV_VIC"
+  }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Engine Engine Engine {
+     MaxPower 200
+     MaxTorque 400
+     RpmMaxPower 8000
+     RpmMaxTorque 4000
+     Friction 30
+     RpmIdle 3000
+     RpmRedline 9000
+     RpmMax 14000
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Bench {
+     Prefab "{91DACA332530FFB2}Prefabs/Vehicles/Wheeled/M151A2/M151A2_bench_cargo_covered_black.et"
+     DisablePhysicsInteraction 0
+     DeactivatePhysicsOnAtaching 1
+    }
+    RegisteringComponentSlotInfo Wheel_Spare_01 {
+     Offset 0 0 -0.0378
+     Prefab "{297A4090DC0AECB3}Prefabs/Vehicles/Wheeled/M151A2/VehParts/Wheels/M151A2_wheel_spare_black.et"
+    }
+    RegisteringComponentSlotInfo Canvas {
+     MergePhysics 1
+     Prefab "{42206695A8C54915}Prefabs/Vehicles/Wheeled/M151A2/M151A2_canvas_roof_black.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_04 {
+     PivotID "v_body"
+     Offset -0.613 0.7667 -1.456
+     Angles -89.9604 -50.5527 -45
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_05 {
+     PivotID "v_body"
+     Offset 0.7161 0.6076 -1.4646
+     Angles 0 -94.7474 0
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_06 {
+     PivotID "v_body"
+     Offset 0.8097 0.9639 -1.4887
+     Angles -90 135 135
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_07 {
+     PivotID "v_body"
+     Offset -0.7095 0.7118 -1.2826
+     Angles -90 -5.1894 0
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo SupplyStorage_08 {
+     PivotID "v_body"
+     Offset -0.7092 0.9285 -1.5209
+     Angles 0 71.6489 0
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+     RegisterDamage 1
+    }
+   }
+   SlotMappers {
+    CompartmentToSlotMapping Canvas {
+     SlotName "Canvas"
+     Coverage 0.1
+     Compartments {
+      "PilotCompartment" "Passenger_r01" "Passenger_l02" "Passenger_r02"
+     }
+    }
+   }
+  }
+ }
+}

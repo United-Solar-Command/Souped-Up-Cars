@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C34F73914BAF1EC3}Prefabs/Vehicles/Wheeled/S1203/Dst/S1203_window_rf1_tint.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

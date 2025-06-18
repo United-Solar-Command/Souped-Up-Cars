@@ -1,0 +1,24 @@
+GenericEntity : "{9CF19D872D4D1C00}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_pintle.et" {
+ ID "476AE74DE20E1061"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{65A341C08A827D85}" {
+     SourceMaterial "M2_Mount"
+     AssignedMaterial "{C2E93A2AA8BFBEA6}Assets/Weapons/HeavyWeapons/M2HB/Data/M2_Mount_black.emat"
+    }
+   }
+  }
+  TurretComponent "{6D6D283BE816D8C3}" {
+   CameraAdsAttachment PointInfo "{65A341C098C0DDDA}" {
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MagazineTemplate "{9E829936BA54F2D6}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_4Ball_1Tracer_black.et"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,68 @@
+Vehicle : "{7524FB186D534ACA}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_covered_CIV_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{65A341D895422ED0}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{7B3F7314677908CE}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_black.emat"
+    }
+    MaterialAssignClass "{65A341D895422EFD}" {
+     SourceMaterial "UAZ469_Details"
+     AssignedMaterial "{392169C8AF0FD9AF}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Details_black.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "UAZ469 (Black)"
+    m_Image "{1003BE996DAF0FB3}UI/Textures/EditorPreviews/Vehicles/Wheeled/UAZ469/UAZ469_covered_CIV_blue.edds"
+    m_sFaction "CIV_VIC"
+    m_aAutoLabels {
+     14 1001 122 50
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{512CC5B0F07DA8F9}" {
+   m_fFuelConsumption 5
+   m_fFuelConsumptionIdle 0
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "CIV_VIC"
+  }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Engine Engine Engine {
+     MaxPower 150
+     MaxTorque 400
+     RpmMaxPower 9000
+     RpmMaxTorque 5000
+     Friction 100
+     RpmIdle 2000
+     RpmRedline 10000
+     RpmMax 20000
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Frame {
+     Prefab ""
+    }
+    RegisteringComponentSlotInfo Door_L01 {
+     Prefab "{22859284CE575A73}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/Black/UAZ469_door_L01_black.et"
+    }
+    RegisteringComponentSlotInfo Door_R01 {
+     Prefab "{EF31671B958C7936}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/Black/UAZ469_door_R01_black.et"
+    }
+    RegisteringComponentSlotInfo Door_L02 {
+     Prefab "{6275B3A1784BD834}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/Black/UAZ469_door_L02_black.et"
+    }
+    RegisteringComponentSlotInfo Door_R02 {
+     Prefab "{AFC1463E2390FB71}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/Black/UAZ469_door_R02_black.et"
+    }
+   }
+  }
+ }
+ coords 1197.882 50.962 1311.549
+}

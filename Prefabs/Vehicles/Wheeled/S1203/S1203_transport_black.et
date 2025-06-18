@@ -1,0 +1,143 @@
+Vehicle : "{D7663936ABF75FB0}Prefabs/Vehicles/Wheeled/S1203/S1203_transport_base.et" {
+ ID "0000000000000001"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{65A341D677B0A943}" {
+     SourceMaterial "S1203_body"
+     AssignedMaterial "{3C0C04552CCD0387}Assets/Vehicles/Wheeled/S1203/Data/S1203_body_black.emat"
+    }
+    MaterialAssignClass "{65A341D677B0A924}" {
+     SourceMaterial "S1203_details"
+     AssignedMaterial "{718C92FFC5E0F5F1}Assets/Vehicles/Wheeled/S1203/Data/S1203_details.emat"
+    }
+    MaterialAssignClass "{65A341D677B0A922}" {
+     SourceMaterial "S1203_details2"
+     AssignedMaterial "{D1392500609C9A28}Assets/Vehicles/Wheeled/S1203/Data/S1203_details2.emat"
+    }
+    MaterialAssignClass "{65A341D677B0A935}" {
+     SourceMaterial "S1203_details3"
+     AssignedMaterial "{253162986D41F25C}Assets/Vehicles/Wheeled/S1203/Data/S1203_details3.emat"
+    }
+    MaterialAssignClass "{65A341D677B0A939}" {
+     SourceMaterial "S1203_interior"
+     AssignedMaterial "{9CD2F4692ADF7CF1}Assets/Vehicles/Wheeled/S1203/Data/S1203_interior.emat"
+    }
+    MaterialAssignClass "{65A341D677B0A903}" {
+     SourceMaterial "S1203_interior2"
+     AssignedMaterial "{2392918B115F3913}Assets/Vehicles/Wheeled/S1203/Data/S1203_interior2.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Pussywagon (Transport, Black)"
+    Description "A United Earth Intelligence Agency Special Automobile Prototype, currently disguised as a S1203 from the 1980s."
+    m_Image "{6B95BFDE5588CB29}UI/Textures/EditorPreviews/Vehicles/Wheeled/S1203/S1203_blue.edds"
+    m_sFaction "CIV_VIC"
+    m_aAuthoredLabels {
+     3 36 200
+    }
+    m_aAutoLabels + {
+     14 1001
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{6052A79ADDA6C7A8}" {
+      m_Value 0
+     }
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+     }
+     SCR_EntityBudgetValue "{5EE71CA1677C234F}" {
+      m_Value 0
+     }
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{512CC5B0F07DA8F9}" {
+   m_fFuelConsumption 0
+   m_fFuelConsumptionIdle 0
+  }
+  SCR_FuelManagerComponent "{5622A70CD78A9E2C}" {
+   FuelNodes {
+    SCR_FuelNode "{5622A70CD4036C5A}" {
+     MaxFuel 50000
+     m_fInitialFuelTankState 50000
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{607097C321D5128E}" {
+   m_fMaxWeight 10000000000
+  }
+  SCR_VehicleBuoyancyComponent "{5ECC936F0C77E390}" {
+   Buoyancy 1
+   ThrustPoints {
+    0.5 0.5 2.5
+   }
+   ThurstForward 100
+   ThurstReverse 100
+   ThurstSteering 100
+   BuoyancyLoss 0
+   BuoyancyLossDestroyed 0
+   BuoyancyLossThreshold 0
+   BuoyancyGain 10
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "CIV_VIC"
+  }
+  SCR_WheeledDamageManagerComponent "{141326E9FD94FE40}" {
+   "Additional hit zones" {
+    SCR_FuelHitZone FuelTank_01 {
+     IgnoreExplosions 1
+     BaseDamageMultiplier 0
+     MaxHealth 65535
+     DamageReduction 1000
+    }
+   }
+   "Fall damage min speed" 0
+   "Fall damage max speed" 0
+   EnableDamage 0
+   m_fEngineMalfunctioningThreshold -1
+   m_fFuelTankFireDamageRate 0
+   m_fSuppliesFireDamageRate 0
+   m_fSecondaryFireDamageDelay 0
+  }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    SolverUpdateRate 1000
+    Engine Engine Engine {
+     MaxPower 200
+     MaxTorque 176
+     RpmMaxPower 18000
+     RpmMaxTorque 10000
+     Steepness 0
+     Friction 100
+     RpmIdle 2600
+     RpmRedline 24000
+     RpmMax 24000
+    }
+    Clutch Clutch Clutch {
+     MaxClutchTorque 10000
+    }
+    Axles {
+     Axle "{4D8B26DF957A8E1C}" {
+      TorqueShare 0.5
+      HasHandbrake 1
+     }
+     Axle "{4D8B26DF8CF2F3D8}" {
+      TorqueShare 0.5
+     }
+    }
+    Aerodynamics Aerodynamics "{5562A623B55A4C07}" {
+     DragCoefficient 5
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Rear_seat {
+     Prefab "{BFD55E45577C68A2}Prefabs/Vehicles/Wheeled/S1203/VehParts/S1203_rear_seats.et"
+    }
+   }
+  }
+ }
+}

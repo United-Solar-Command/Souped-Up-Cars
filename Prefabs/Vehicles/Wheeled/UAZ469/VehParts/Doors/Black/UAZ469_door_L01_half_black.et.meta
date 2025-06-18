@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8A16F8AAD530BC2D}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Doors/Black/UAZ469_door_L01_half_black.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

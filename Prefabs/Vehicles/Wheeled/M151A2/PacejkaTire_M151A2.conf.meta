@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F8F3CCC335D8F64D}Prefabs/Vehicles/Wheeled/M151A2/PacejkaTire_M151A2.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

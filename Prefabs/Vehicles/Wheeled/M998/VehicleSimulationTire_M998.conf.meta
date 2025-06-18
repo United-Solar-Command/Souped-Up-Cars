@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2C1430765C6F5FD4}Prefabs/Vehicles/Wheeled/M998/VehicleSimulationTire_M998.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

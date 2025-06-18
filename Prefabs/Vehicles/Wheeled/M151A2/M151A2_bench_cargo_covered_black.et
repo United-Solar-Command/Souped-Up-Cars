@@ -1,0 +1,23 @@
+GenericEntity : "{B56FF8E1E075048A}Prefabs/Vehicles/Wheeled/M151A2/M151A2_bench_cargo.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A341C4D036D757}" {
+     SourceMaterial "M151A2_Canvas"
+     AssignedMaterial "{A81E68A0A841F5B6}Assets/Vehicles/Wheeled/M151A2/Data/M151A2_Details_black.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{2CD4A765A7D52986}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_l02 {
+     CharactersCanFallOutOnFlip 0
+    }
+    CargoCompartmentSlot Passenger_r02 {
+     CharactersCanFallOutOnFlip 0
+    }
+   }
+  }
+ }
+}

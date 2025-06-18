@@ -1,0 +1,15 @@
+GenericEntity : "{652D97CB5784493A}Prefabs/Vehicles/Wheeled/S105/Dst/S105_window_base.et" {
+ ID "54ACA4E7EDB33945"
+ components {
+  MeshObject "{54ACA4E7F43678F8}" {
+   Object "{4C9F20CF212FD9B2}Assets/Vehicles/Wheeled/S105/Dst/S105GlassRF2.xob"
+   Materials {
+    MaterialAssignClass "{65A341C5EDE5299D}" {
+     SourceMaterial "S105_glassMain"
+     AssignedMaterial "{F1A45D8A2062268F}Assets/Vehicles/Wheeled/S105/Data/S105_glassTint.emat"
+    }
+   }
+  }
+ }
+ coords 1324.766 51.001 1378.979
+}

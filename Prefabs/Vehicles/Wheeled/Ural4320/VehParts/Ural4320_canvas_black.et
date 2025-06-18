@@ -1,0 +1,14 @@
+GenericEntity : "{25895C54FE021EE6}Prefabs/Vehicles/Core/Vehicle_Canvas_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{E4D72AFA916A4396}Assets/Vehicles/Wheeled/Ural4320/Ural_4320_canvas.xob"
+   Materials {
+    MaterialAssignClass "{64FEB76A66B26D99}" {
+     SourceMaterial "base"
+     AssignedMaterial "{628A80FE2E29E4E4}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Canvas_black.emat"
+    }
+   }
+  }
+ }
+}

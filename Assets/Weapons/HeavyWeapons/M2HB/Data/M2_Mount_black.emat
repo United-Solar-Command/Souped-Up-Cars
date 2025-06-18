@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Color 0 0 0 1
+ BCRMap "{0940C5CA9300B2C9}Assets/Weapons/HeavyWeapons/M2HB/Data/M2_M151A2MUTT_mount_BCR.edds"
+ NMOMap "{31987E584A77E057}Assets/Weapons/HeavyWeapons/M2HB/Data/M2_M151A2MUTT_mount_NMO.edds"
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{40E6BA412F2F3BF8}Prefabs/Vehicles/Wheeled/M923A1/M923A1_cargo_canvas_black.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

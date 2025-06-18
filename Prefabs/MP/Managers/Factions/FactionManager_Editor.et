@@ -1,0 +1,14 @@
+SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
+ ID "56B2B4776E6E4499"
+ Factions {
+  SCR_Faction "{65A341D34FD090BD}" : "{A2C1E76C2EF8D240}Configs/Factions/Custom_Vehicles.conf" {
+   FactionColor 0.1119 0.0103 0.7529 1
+   UIInfo SCR_FactionUIInfo "{65A341D3B768DE33}" {
+    Description "DO NOT SET AS PLAYABLE"
+   }
+   m_OutlineFactionColor 0.022 0.003 0.12 1
+   m_NotificationFactionColor 0.112 0.01 0.753 1
+   m_NotificationTextFactionColor 0.112 0.01 0.753 1
+  }
+ }
+}

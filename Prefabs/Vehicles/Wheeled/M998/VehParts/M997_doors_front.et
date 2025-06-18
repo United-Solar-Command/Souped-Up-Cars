@@ -1,0 +1,35 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{1CF1DEB51F4DA334}Assets/Vehicles/Wheeled/M998/VehParts/M997_doors_front.xob"
+   Materials {
+    MaterialAssignClass "{65A341C3816F8628}" {
+     SourceMaterial "Base"
+     AssignedMaterial "{13C95A1F8A6D2892}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Roof_Black.emat"
+    }
+   }
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Doors : "{000477F2B739E64E}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_HZ_vehpart.conf" {
+     IgnoreExplosions 1
+    }
+   }
+  }
+  SlotManagerComponent "{65A341CD41C149D4}" {
+   Slots {
+    RegisteringComponentSlotInfo Window_RF {
+     PivotID "v_door_R01"
+     Prefab "{569ADB1CA771C3D0}Prefabs/Vehicles/Wheeled/M998/Dst/M1025_roof_window_rf_tint.et"
+     RegisterDamage 1
+    }
+    RegisteringComponentSlotInfo Window_LF {
+     PivotID "v_door_L01"
+     Prefab "{C029661E7789CAB4}Prefabs/Vehicles/Wheeled/M998/Dst/M1025_roof_window_lf.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+}

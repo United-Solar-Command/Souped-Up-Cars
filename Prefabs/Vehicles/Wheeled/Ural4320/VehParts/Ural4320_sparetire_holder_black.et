@@ -1,0 +1,40 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{051665C234F24509}Assets/Vehicles/Wheeled/Ural4320/VehParts/Ural_4320_sparetyre_holder.xob"
+   Materials {
+    MaterialAssignClass "{65A341DB6900C742}" {
+     SourceMaterial "Ural_Details"
+     AssignedMaterial "{ED429F0E64039AD4}Assets/Vehicles/Wheeled/Ural4320/Data/Ural_4320_Details_black.emat"
+    }
+   }
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone SpareTireHolder : "{20D6C595AE450F55}Prefabs/Vehicles/Core/Configs/HitZones/VehiclePart_HZ.conf" {
+    }
+    SCR_FuelHitZone FuelTank_02 : "{D19325BDFDD31404}Prefabs/Vehicles/Core/Configs/HitZones/FuelTank_Truck.conf" {
+     ColliderNames {
+      "UCX_FG_Fueltank_02"
+     }
+     m_SecondaryExplosionPoint PointInfo "{5E70BAEDE2572E70}" {
+      Offset -0.4166 1.512 0.5434
+     }
+     m_iFuelTankID 2
+    }
+   }
+  }
+  SlotManagerComponent "{65A341DB8F2BB6EE}" {
+   Slots {
+    RegisteringComponentSlotInfo Spare_Wheel_01 {
+     Offset 0.5728 1.775 0.5696
+     Angles 0 -90 0
+     MergePhysics 1
+     Prefab "{69FDF3B29064F40F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Wheels/Ural4320_wheel_left_01.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+}

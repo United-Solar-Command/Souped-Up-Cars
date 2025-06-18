@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2C137D3D6D2A64C9}Prefabs/Vehicles/Wheeled/M923A1/CompartmentAccess_M923A1_cargo.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

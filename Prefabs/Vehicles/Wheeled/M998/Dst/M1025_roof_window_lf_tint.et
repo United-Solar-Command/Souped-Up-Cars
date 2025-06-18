@@ -1,0 +1,8 @@
+GenericEntity : "{08E61081E0A23503}Prefabs/Vehicles/Wheeled/M998/Dst/M998_window_base.et" {
+ ID "54ACA4E7EDB33945"
+ components {
+  MeshObject "{54ACA4E7F43678F8}" {
+   Object "{D4D0C3CE9700A5CE}Assets/Vehicles/Wheeled/M998/Dst/M1025_Roof_glass_LF.xob"
+  }
+ }
+}

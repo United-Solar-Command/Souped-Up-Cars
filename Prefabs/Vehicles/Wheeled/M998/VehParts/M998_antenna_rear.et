@@ -1,0 +1,24 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{D7F1793A6A64207A}Assets/Vehicles/Wheeled/M998/VehParts/M998_Antenna_rear.xob"
+   Materials {
+    MaterialAssignClass "{65A341C3B4A70014}" {
+     SourceMaterial "Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body"
+     AssignedMaterial "{4EC0B2C0FB7CD6E7}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Black.emat"
+    }
+    MaterialAssignClass "{65A341C3B4A70038}" {
+     SourceMaterial "HMMWV_Body_Details"
+     AssignedMaterial "{3E4312D0525C8B29}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Details_black.emat"
+    }
+   }
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Antenna_rear : "{000477F2B739E64E}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_HZ_vehpart.conf" {
+    }
+   }
+  }
+ }
+}

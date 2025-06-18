@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CE84682FA2F0AAB4}Prefabs/Vehicles/Wheeled/M151A2/VehicleSimulationTire_M151A2.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

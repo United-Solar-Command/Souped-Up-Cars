@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CD3D7956E4B472BC}Assets/Weapons/HeavyWeapons/M2HB/Data/M2_AmmoBox_black.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

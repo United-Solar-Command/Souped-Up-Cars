@@ -1,0 +1,40 @@
+GenericEntity : "{343EC0126CCD0F58}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_roof.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A341C00F0E9CAD}" {
+     SourceMaterial "Base"
+     AssignedMaterial "{13C95A1F8A6D2892}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Roof_Black.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{54F2B37F3202E099}" {
+   Slots {
+    RegisteringComponentSlotInfo Window_LR {
+     Prefab "{1D9160CC301CF9F8}Prefabs/Vehicles/Wheeled/M998/Dst/M1025_roof_window_lr_tint.et"
+    }
+    RegisteringComponentSlotInfo Window_RR {
+     Prefab "{1E11E87DBF158268}Prefabs/Vehicles/Wheeled/M998/Dst/M1025_roof_window_rr_tint.et"
+    }
+    RegisteringComponentSlotInfo Window_RF {
+     Prefab "{569ADB1CA771C3D0}Prefabs/Vehicles/Wheeled/M998/Dst/M1025_roof_window_rf_tint.et"
+    }
+    RegisteringComponentSlotInfo Window_LF {
+     Prefab "{551A53AD2878B840}Prefabs/Vehicles/Wheeled/M998/Dst/M1025_roof_window_lf_tint.et"
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{E8674CE0817B0B29}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_gun_mount_M2HB_black.et"
+     RegisterActions 1
+     RegisterDamage 1
+     RegisterControllers 1
+     RegisterWeapons 1
+     RegisterCompartments 1
+    }
+   }
+  }
+  ActionsManagerComponent "{65A341CD42AA1734}" {
+   AllowCrossHierarchy 1
+  }
+ }
+}

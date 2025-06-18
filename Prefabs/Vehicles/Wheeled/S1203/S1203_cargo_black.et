@@ -1,0 +1,189 @@
+Vehicle : "{4AE9D080927D3CB9}Prefabs/Vehicles/Wheeled/S1203/S1203_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{65A341D65171F5D2}" {
+     SourceMaterial "S1203_body"
+     AssignedMaterial "{3C0C04552CCD0387}Assets/Vehicles/Wheeled/S1203/Data/S1203_body_black.emat"
+    }
+    MaterialAssignClass "{65A341D65171F5B0}" {
+     SourceMaterial "S1203_details"
+     AssignedMaterial "{718C92FFC5E0F5F1}Assets/Vehicles/Wheeled/S1203/Data/S1203_details.emat"
+    }
+    MaterialAssignClass "{65A341D65171F5BB}" {
+     SourceMaterial "S1203_details2"
+     AssignedMaterial "{D1392500609C9A28}Assets/Vehicles/Wheeled/S1203/Data/S1203_details2.emat"
+    }
+    MaterialAssignClass "{65A341D65171F583}" {
+     SourceMaterial "S1203_details3"
+     AssignedMaterial "{253162986D41F25C}Assets/Vehicles/Wheeled/S1203/Data/S1203_details3.emat"
+    }
+    MaterialAssignClass "{65A341D65171F588}" {
+     SourceMaterial "S1203_interior"
+     AssignedMaterial "{9CD2F4692ADF7CF1}Assets/Vehicles/Wheeled/S1203/Data/S1203_interior.emat"
+    }
+    MaterialAssignClass "{65A341D65171F592}" {
+     SourceMaterial "S1203_interior2"
+     AssignedMaterial "{2392918B115F3913}Assets/Vehicles/Wheeled/S1203/Data/S1203_interior2.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Pussywagon (Cargo, Black)"
+    m_sFaction "CIV_VIC"
+    m_aAuthoredLabels {
+     3 50 36 210
+    }
+    m_aAutoLabels + {
+     14 1001
+    }
+   }
+  }
+  SCR_FuelConsumptionComponent "{512CC5B0F07DA8F9}" {
+   m_fFuelConsumption 0
+   m_fFuelConsumptionIdle 0
+  }
+  SCR_VehicleFactionAffiliationComponent "{5882CBD9AC741CEC}" {
+   "faction affiliation" "CIV_VIC"
+  }
+  VehicleWheeledSimulation "{731B26FCA2F19855}" {
+   Simulation Wheeled "{4D8B26DEA5F25978}" {
+    Engine Engine Engine {
+     MaxPower 100
+     MaxTorque 200
+     RpmMaxPower 9000
+     RpmMaxTorque 5000
+     Friction 100
+     RpmIdle 2000
+     RpmRedline 10000
+     RpmMax 15000
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo SupplyStorage_Row1_1_R {
+     PivotID "v_body"
+     Offset 0.361 0.51 0.5021
+     Angles 0 94.0306 90
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row1_1_L {
+     PivotID "v_body"
+     Offset -0.361 0.51 0.5021
+     Angles 0 75.7437 90
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row1_2_R {
+     PivotID "v_body"
+     Offset 0.3115 0.1077 -0.3084
+     Angles 0 89 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row1_2_L {
+     PivotID "v_body"
+     Offset -0.3115 0.1077 -0.3084
+     Angles 0 90.99129 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row1_3_Mid {
+     PivotID "v_body"
+     Offset 0 0.1077 -1.0172
+     Angles 0 1.7372 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row1_4_Mid {
+     PivotID "v_body"
+     Offset 0 0.1077 -1.5979
+     Angles 0 -1.4771 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row2_2_L {
+     PivotID "v_body"
+     Offset -0.3115 0.425 -0.3084
+     Angles 0 93.7397 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row2_2_R {
+     PivotID "v_body"
+     Offset 0.3115 0.425 -0.3084
+     Angles 0 80.3052 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row2_3_L {
+     PivotID "v_body"
+     Offset -0.3127 0.425 -1.1515
+     Angles 0 86.64629 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row2_3_R {
+     PivotID "v_body"
+     Offset 0.3127 0.425 -1.1515
+     Angles 0 94.1003 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Small_Row2_4_R {
+     PivotID "v_body"
+     Offset 0.1994 0.6009 -1.5765
+     Angles 90 0 2.8205
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Small_Row2_4_L {
+     PivotID "v_body"
+     Offset -0.1994 0.6009 -1.5765
+     Angles 90 180 179.37592
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row3_2_Mid {
+     PivotID "v_body"
+     Offset 0 0.7506 -0.2
+     Angles 0 163.7776 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row3_3_L {
+     PivotID "v_body"
+     Offset -0.3134 0.7506 -0.95
+     Angles 0 78.97871 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Row3_3_R {
+     PivotID "v_body"
+     Offset 0.3134 0.7506 -0.95
+     Angles 0 87.1898 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Small_Row3_4_L {
+     PivotID "v_body"
+     Offset -0.2203 0.7581 -1.5488
+     Angles 0 4.6299 0
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    EntitySlotInfo SupplyStorage_Small_Row3_4_R {
+     PivotID "v_body"
+     Offset 0.2203 0.7581 -1.5488
+     Angles 0 -5.1244 0
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+   }
+  }
+ }
+}

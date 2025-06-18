@@ -1,0 +1,30 @@
+GenericEntity : "{780AAF0A51AEE61A}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Seats/UAZ469_seats_rear.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A341D9D2D6BBB1}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{7B3F7314677908CE}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_black.emat"
+    }
+    MaterialAssignClass "{65A341D9D2D6BB91}" {
+     SourceMaterial "UAZ469_Details"
+     AssignedMaterial "{8B3A0978E3D802E1}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Details.emat"
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{2CD4A765A7D52986}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_l02 {
+     CharactersCanFallOutOnFlip 1
+    }
+    CargoCompartmentSlot Passenger_r02 {
+     CharactersCanFallOutOnFlip 1
+    }
+    CargoCompartmentSlot Passenger_m02 {
+     CharactersCanFallOutOnFlip 1
+    }
+   }
+  }
+ }
+}

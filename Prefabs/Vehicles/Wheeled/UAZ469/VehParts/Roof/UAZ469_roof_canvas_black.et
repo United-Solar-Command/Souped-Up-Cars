@@ -1,0 +1,22 @@
+GenericEntity : "{25895C54FE021EE6}Prefabs/Vehicles/Core/Vehicle_Canvas_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{407536B3D8A85E53}Assets/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_roof_canvas.xob"
+   Materials {
+    MaterialAssignClass "{65A341D97FBB9975}" {
+     SourceMaterial "UAZ469_Details"
+     AssignedMaterial "{392169C8AF0FD9AF}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Details_black.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{65A341D991872192}" {
+   Slots {
+    RegisteringComponentSlotInfo Window_rear {
+     Prefab "{BC9BCE79086726B6}Prefabs/Vehicles/Wheeled/UAZ469/dst/UAZ469_window_back.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+}

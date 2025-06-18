@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{FDC0C5BDE2C4317D}Assets/Vehicles/Generic/VehParts/LicensePlate_01/Data/spz_base_01.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

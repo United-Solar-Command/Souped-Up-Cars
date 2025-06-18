@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7CA17AF779E30DB5}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Glass_tint.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

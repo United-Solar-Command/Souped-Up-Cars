@@ -1,0 +1,26 @@
+GenericEntity : "{CB57B46FCFE1A189}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Roof/UAZ469_roof_frame.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A341D972678223}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{7B3F7314677908CE}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_black.emat"
+    }
+    MaterialAssignClass "{65A341D97267823B}" {
+     SourceMaterial "UAZ469_Details"
+     AssignedMaterial "{392169C8AF0FD9AF}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Details_black.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{5AD4F813CB651B2A}" {
+   Slots {
+    RegisteringComponentSlotInfo Canvas {
+     MergePhysics 1
+     Prefab "{919012910FC1255B}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/Roof/UAZ469_roof_canvas_black.et"
+     RegisterDamage 1
+    }
+   }
+  }
+ }
+}

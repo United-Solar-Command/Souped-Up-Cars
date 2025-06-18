@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B97E7901FB630B22}Prefabs/Vehicles/Wheeled/M998/Dst/M998_window_canvas_short_back_tint.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

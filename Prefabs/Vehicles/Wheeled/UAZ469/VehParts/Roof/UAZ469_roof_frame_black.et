@@ -1,0 +1,26 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{F373CB3A40DAC979}Assets/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_roof_frame.xob"
+   Materials {
+    MaterialAssignClass "{65A341D97B5400D8}" {
+     SourceMaterial "UAZ469_Body"
+     AssignedMaterial "{7B3F7314677908CE}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Body_black.emat"
+    }
+    MaterialAssignClass "{65A341D97B5400BC}" {
+     SourceMaterial "UAZ469_Details"
+     AssignedMaterial "{392169C8AF0FD9AF}Assets/Vehicles/Wheeled/UAZ469/Data/UAZ469_Details_black.emat"
+    }
+   }
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Roof : "{C8F33AA9CC897E7D}Prefabs/Vehicles/Wheeled/UAZ469/VehParts/UAZ469_HZ_VehPart.conf" {
+    }
+   }
+  }
+  SlotManagerComponent "{65A341D99E6670DB}" {
+  }
+ }
+}

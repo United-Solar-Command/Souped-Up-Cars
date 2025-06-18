@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B607FD9AC5F61C5A}Prefabs/Vehicles/Wheeled/UAZ452/UAZ452_cargo_CIV_black.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

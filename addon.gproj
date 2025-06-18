@@ -1,8 +1,22 @@
 GameProject {
  ID "SoupedUpCars"
  GUID "65A341CEE2D8A35D"
- TITLE "Souped-Up-Cars"
+ TITLE "Souped Up Cars"
  Dependencies {
   "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
  }
 }
